@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ContactTitle</string>
+     <string name="iContactImageView">contactImageView</string>
+    <string name="insideCircleText">insideCircleText</string>
+    <string name="iContactName">contactName</string>
+    <string name="iContactNumber">contactNumber</string>
+    <string name="relativeLayout">relativeLayout</string>
+
+
+    <string name="detailsImageView">detailsImageView</string>
+
+    <string name="iSecondInsideCircleText">iSecondInsideCircleText</string>
+    <string name="iSecondContactNumber">iSecondContactNumber</string>
+    <string name="iSecondContactName">iSecondContactName</string>
+
+
+
+
+
+</resources>
