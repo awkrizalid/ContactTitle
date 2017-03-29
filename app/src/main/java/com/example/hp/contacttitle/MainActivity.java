@@ -37,16 +37,26 @@ public class MainActivity extends Activity {
         ListView iListView = (ListView) findViewById(R.id.iListView);
         iListView.setAdapter(contactAdapter);
 
+//        iListView.setOnClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                String contactlist = String.valueOf(parent.getItemAtPosition(position));
+//                System.out.println("go");
+//                Intent myIntent = new Intent(MainActivity.this, ContactList.class);
+//                myIntent.putExtra("Take",contactlist);
+//                startActivity(myIntent);
+//            }
+//        });
         iListView.setOnItemClickListener(
 
                 new AdapterView.OnItemClickListener(){
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                        String contactlist = String.valueOf(parent.getItemAtPosition(position));
+                        String contactName = String.valueOf(parent.getItemAtPosition(position));
                         System.out.println("go");
 
                         Intent myIntent=new Intent(MainActivity.this,ContactDetails.class);
-                        myIntent.putExtra("theKey",contactlist);
+                        myIntent.putExtra("theKey",contactName);
 
 
 

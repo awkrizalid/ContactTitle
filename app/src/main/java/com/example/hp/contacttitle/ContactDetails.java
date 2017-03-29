@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 public class ContactDetails extends Activity {
 
+
     TextView secondContactName ,secondContactNumber ,secondInsideCirlceText;
     ImageView secondContactView;
     String name;
@@ -17,11 +18,15 @@ public class ContactDetails extends Activity {
         setContentView(R.layout.contactdetails);
         System.out.println("jukar");
         getAllView();
+
+
         Intent gotIt=getIntent();
         name=gotIt.getStringExtra("theKey");
         secondContactName.setText(name);
         secondInsideCirlceText.setText(splitName());
+        secondContactNumber.setText(""+ContactList.myContacts.get(name));
         titleColor();
+
 
     }
 
